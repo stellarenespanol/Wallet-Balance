@@ -1,4 +1,4 @@
-# Wallet Balance
+# Stellar Balance Checker
 
 La aplicación Stellar Balance Checker es una herramienta sencilla diseñada para consultar el saldo de tu cuenta en la red Stellar de forma rápida y visual.
 
