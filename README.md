@@ -2,6 +2,8 @@
 
 La aplicación Stellar Balance Checker es una herramienta sencilla diseñada para consultar el saldo de tu cuenta en la red Stellar de forma rápida y visual.
 
+![para elreadme](https://github.com/user-attachments/assets/84ee15eb-265c-41ce-8395-a537388c889c)
+
 ## Requisitos Previos
 
 La aplicación depende de las siguientes dependencias:
