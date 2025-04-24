@@ -1,63 +1,61 @@
-# Stellar Balance Checker
+# Wallet Balance - Stellar en Español
 
-La aplicación Stellar Balance Checker es una herramienta sencilla diseñada para consultar el saldo de tu cuenta en la red Stellar de forma rápida y visual.
+Esta es una aplicación web desarrollada con [Next.js](https://nextjs.org/) que permite consultar de forma rápida y sencilla el saldo de una cuenta en la red Stellar. El usuario puede conectar su wallet y visualizar al instante cuántos XLM tiene disponibles en su cuenta.
 
-![para elreadme](https://github.com/user-attachments/assets/84ee15eb-265c-41ce-8395-a537388c889c)
+## Características principales
+- Conexión sencilla a wallets compatibles con Stellar (por ejemplo, Freighter).
+- Consulta instantánea del saldo de la cuenta Stellar conectada.
+- Interfaz moderna, responsiva y en español.
+- Uso de [@creit.tech/stellar-wallets-kit](https://www.npmjs.com/package/@creit.tech/stellar-wallets-kit) para la integración con wallets.
 
-## Requisitos Previos
+## Estructura del proyecto
+- **src/app/page.tsx**: Página principal, muestra la interfaz y conecta los componentes clave.
+- **src/app/components/WalletButton.tsx**: Componente para conectar/desconectar la wallet de Stellar.
+- **src/app/components/Balance.tsx**: Componente que muestra el saldo de XLM de la cuenta conectada.
+- **src/app/utils/balance.ts**: Lógica para consultar el saldo en la blockchain de Stellar.
 
-La aplicación depende de las siguientes dependencias:
+## Instalación y ejecución
 
-- Node (>=16.14.0 <=18.0.0): https://nodejs.org/en/download/
-- Yarn (v1.22.5 o más reciente): https://classic.yarnpkg.com/en/docs/install
-- Una wallet compatible con Stellar (Freighter, Albedo o XBull): https://www.freighter.app/
-
-## Características
-
-Stellar Balance Checker ofrece las siguientes características:
-
-1. **Integración con múltiples wallets**: La aplicación se integra perfectamente con Freighter, Albedo y XBull, permitiendo a los usuarios conectar su wallet preferida para consultar su saldo.
-
-2. **Visualización de saldo en tiempo real**: Una vez conectada la wallet, la aplicación muestra el saldo actual de XLM en la cuenta del usuario con una interfaz visual atractiva.
-
-3. **Interfaz de usuario intuitiva**: Diseño limpio y moderno que facilita la consulta de saldos con una experiencia de usuario optimizada.
-
-## Instalación
-
-Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
-
-```bash
-# Clonar el repositorio
-git clone [url-del-repositorio]
-
-# Navegar al directorio del proyecto
-cd stellar-balance-checker
-
-# Instalar dependencias
-yarn install
-
-# Iniciar la aplicación en modo desarrollo
-yarn start
-```
-
-La aplicación estará disponible en `http://localhost:9000`.
+1. **Clona el repositorio**
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd wallet-balance
+   ```
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+3. **Inicia el servidor de desarrollo**
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
+4. **Abre la aplicación en tu navegador**
+   Ve a [http://localhost:3000](http://localhost:3000)
 
 ## Uso
+1. Haz clic en el botón para conectar tu wallet de Stellar.
+2. Autoriza la conexión desde tu wallet (por ejemplo, Freighter).
+3. Una vez conectada, verás el saldo de tu cuenta en XLM.
 
-1. Abre la aplicación en tu navegador
-2. Haz clic en "Conectar Wallet"
-3. Selecciona tu wallet preferida (Freighter, Albedo o XBull)
-4. Autoriza la conexión
-5. ¡Listo! Ahora puedes ver tu saldo de XLM en la interfaz
-
-## Tecnologías Utilizadas
-
-- React
+## Tecnologías utilizadas
+- [Next.js](https://nextjs.org/) 15.3.1
+- [React](https://react.dev/) 19
+- [@creit.tech/stellar-wallets-kit](https://www.npmjs.com/package/@creit.tech/stellar-wallets-kit)
+- [Tailwind CSS](https://tailwindcss.com/) 4
 - TypeScript
-- Stellar SDK
-- Stellar Wallets Kit
-- Stellar Design System
+
+## Scripts disponibles
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Genera la versión de producción.
+- `npm run start`: Inicia la aplicación en modo producción.
+- `npm run lint`: Ejecuta el linter para mantener la calidad del código.
+
+## Personalización
+Puedes modificar los estilos en `src/app/globals.css` y los componentes en la carpeta `src/app/components` para adaptar la aplicación a tus necesidades.
 
 ## Licencia
-
-Apache-2.0
+Este proyecto es de código abierto y puedes adaptarlo libremente.
